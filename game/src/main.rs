@@ -241,7 +241,7 @@ fn prompt_for_game_action<'a>(rooms: &'a Vec<Room>, current_room: &'a Room) -> O
 
     //If we did try to enter a room name, see if it's one of the items in our list
     for room_conn in current_room.connections.iter() {
-        if &buffer == room_conn {
+        if buffer == room_conn {
             for (index, room) in rooms.iter().enumerate() {
                 if &room.name == room_conn {
                     //If the room we picked is a connection, return a reference to the new room
