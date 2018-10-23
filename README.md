@@ -1,8 +1,30 @@
-Requires you have `rustc` and `cargo` installed. You can get both from https://rustup.rs
+This is a program I wrote for OSU's 2nd programming assignment in Operating Systems. The requirements for each program are in their respective folders
 
+## Requirements
 
-Compile with `make`
+- Rust - https://rustup.rs
 
----
+## Compiling
 
-This program doesn't work on Windows, and will panic if there are no folders that fit the correct format. I will add to it probably.
+```
+cargo build [--release]
+```
+
+or with make
+
+```
+make build
+```
+
+## Playing the Game
+
+```sh
+#Compile
+make && make move
+
+#Generate Room Dir
+./buildrooms
+
+#Play Adventure
+./adventure
+```
