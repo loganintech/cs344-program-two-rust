@@ -228,8 +228,9 @@ fn prompt_for_game_action<'a>(rooms: &'a Vec<Room>, current_room: &'a Room) -> O
 
     //Read input from the user
     handle.read_line(&mut buffer).unwrap();
-    let buffer_len = buffer.len();
-    buffer.truncate(buffer_len - 1); //Get rid of the newline character
+
+    //Trim buffer to take whitespace off of the right-side of a string
+    let buffer = buffer.trim_right();
 
     //Print a line
     println!("");
