@@ -1,0 +1,12 @@
+[package]
+name = "program-two-rust"
+version = "0.1.0"
+authors = ["Logan Saso <sasol@oregonstate.edu>"]
+autobins = false
+
+[dependencies]
+rand = "0.5"
+
+[[bin]]
+name="buildrooms"
+path="src/main.rs"
